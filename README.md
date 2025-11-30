@@ -1,101 +1,132 @@
 📌 Multi-Agent LinkedIn Content Studio (DeepSeek Web UI)
 
-An intelligent multi-agent workflow that automatically:
-✔️ Generates trending LinkedIn topics
-✔️ Writes 100% original, SEO-friendly LinkedIn posts
-✔️ Organizes output into raw + final
-✔️ Saves long-term memory
-✔️ Displays interactive UI (Streamlit)
+An intelligent, production-ready multi-agent system that automates research → writing → optimization → scheduling of LinkedIn posts using DeepSeek’s LLM API and Streamlit Web UI.
+
+✔ Generates trending topics
+✔ Writes 100% original, SEO-optimized LinkedIn posts
+✔ Saves long-term memory
+✔ Interactive, beautiful UI
+✔ Multi-agent pipeline
+✔ CSV/TXT outputs
+✔ LinkedIn-style preview
 
 🚀 Features
-1️⃣ Multi-Agent Pipeline
+🔥 Multi-Agent Pipeline
 
-Research Agent
+Research Agent → Finds trending LinkedIn topics
 
-Writer Agent
+Writer Agent → Writes posts in your niche, tone & length
 
-Optimizer Agent
+Optimizer Agent → Improves hooks, hashtags, engagement
 
-Scheduler Agent
+Scheduler Agent → Suggests best posting times
 
-Memory Manager
+Memory Manager → Stores long-term session insights
 
-2️⃣ Long-Term Memory
+🧠 System Architecture
+User Input
+   ↓
+Research Agent → Trending Topics
+   ↓
+Writer Agent → First Draft (Raw Output)
+   ↓
+Optimizer Agent → Refined Post (Final Output)
+   ↓
+Scheduler Agent → Suggested Posting Time
+   ↓
+Memory System → Save session | Load previous memory
+   ↓
+Streamlit UI → Preview | Download | History
 
-Stores:
+📁 Folder Structure
+LinkedIn_Agent_Web_App/
+│
+├── app.py                # Main Streamlit Web App
+├── agent_memory.json     # Long-term memory
+├── requirements.txt      # Dependencies
+├── README.md             # Documentation
+└── screenshots/
+     ├── Main UI.PNG
+     ├── Generated Topics.PNG
+     ├── LinkedIn-style Post Preview.PNG
+     └── History & Memory Section.PNG
 
-previously generated topics
-
-full post history
-
-timestamps
-
-“what worked well” insights
-
-3️⃣ Streamlit Web UI
-
-Dark UI theme
-
-Automatic rendering
-
-Clear and beautiful sections
-
-Live post preview
-
-Logs, history, topics, memory loading
-
-🖼️ Screenshots
-📝 Generated Topics
-<img src="screenshots/generated topics.PNG" width="95%">
-⏳ History & Memory Section
-<img src="screenshots/History & Memory Section.PNG" width="95%">
-👁️ LinkedIn-style Post Preview
-<img src="screenshots/LinkedIn-style Post Preview.PNG" width="95%">
+🖥️ Screenshots
 🏠 Main UI
-<img src="screenshots/Main UI.PNG" width="95%">
-🧠 Technologies Used
+<img src="screenshots/Main UI.PNG" width="90%">
+🧠 Generated Topics
+<img src="screenshots/Generated Topics.PNG" width="90%">
+🔍 Post Preview
+<img src="screenshots/LinkedIn-style Post Preview.PNG" width="90%">
+📘 Memory & History
+<img src="screenshots/History & Memory Section.PNG" width="90%">
+📦 Installation & Running Instructions
+1. Clone Repo
+git clone https://github.com/tabinda331/LinkedIn_Agent_Web_App.git
+cd LinkedIn_Agent_Web_App
 
-Python
+2. Install dependencies
+pip install -r requirements.txt
 
-Streamlit
+3. Add your DeepSeek API key
 
-DeepSeek API
+Create .env file:
 
-JSON long-term memory
+DEEPSEEK_API_KEY=your_key_here
 
-Multi-Agent architecture
-
-▶️ How to Run Locally
-1. Install requirements
-pip install -r requirement.txt
-
-2. Add your DeepSeek API Key
-
-In your terminal:
-
-export DEEPSEEK_API_KEY="your_api_key_here"
-
-
-(Windows PowerShell)
-
-setx DEEPSEEK_API_KEY "your_api_key_here"
-
-3. Run the app
+4. Run Streamlit App
 streamlit run app.py
 
-🏁 Project Status
+📝 Sample Output (Final LinkedIn Post)
+🚀 Why Getting Jobs Is Harder Today
 
-✔️ Fully working
-✔️ Includes long-term memory
-✔️ Multi-agent implemented
-✔️ Screenshots included
-✔️ Ready for Kaggle Capstone submission 🚀
+The job market has changed more in the last 3 years than in the last decade...
 
-🌟 Author
+(Your post continues...)
 
-Tabinda
-AI Researcher | Automation Developer
+🎯 Evaluation (For Kaggle)
 
-📬 Contact
+This project demonstrates:
 
-For support or improvements — feel free to reach out!
+✔ Multi-Agent System
+
+Parallel + sequential agent pipeline
+
+✔ LLM Tool Usage
+
+DeepSeek API for generation & rewriting
+
+✔ Long-term Memory
+
+Context stored across runs via JSON
+
+✔ Logs + Traceability
+
+Raw + final post logs + UI previews
+
+✔ UI + Deployment
+
+Streamlit interface = production-ready demo
+
+🧩 Limitations & Future Work
+
+Add auto LinkedIn publishing
+
+Add topic sentiment analysis
+
+Add voice input
+
+Add user profile intelligence
+
+📽️ Video Demo (Required by Kaggle)
+
+Upload to YouTube or Google Drive and paste link here
+
+📜 License
+
+MIT License
+
+🤝 Author & Credits
+
+Developed by Tabinda Noreen
+Part of Kaggle Agents Intensive Capstone Submission
